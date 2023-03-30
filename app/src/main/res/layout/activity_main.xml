@@ -1,24 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<RelativeLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".MainActivity">
-
-    <Button
-        android:id="@+id/Button1"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="12dp"
-        android:background="#0F9D58"
-        android:text="Add Emergency Contact "
-        android:textColor="#FFFFFF" />
-
+    tools:context=".MainActivity"
+    android:background="@color/light_background">
+  <soup.neumorphism.NeumorphButton
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+      android:layout_marginTop="10dp"
+    android:id="@+id/Button1"
+      style="@style/Widget.Neumorph.Button"
+      android:text="Add Contact"
+      android:textColor="#CF1010"
+      android:textStyle="bold"
+      android:textSize="20sp"
+      android:textAlignment="center"
+      android:gravity="center"/>
     <ListView
         android:id="@+id/ListView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Button1"/>
 
-</LinearLayout>
+</RelativeLayout>

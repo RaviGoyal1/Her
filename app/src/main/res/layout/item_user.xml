@@ -5,37 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="4dp">
+    android:padding="4dp"
+    android:background="@color/light_background">
 
-    <androidx.cardview.widget.CardView
-        android:id="@+id/cardview"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
 
-        <LinearLayout
+        <soup.neumorphism.NeumorphCardView
+            android:id="@+id/cardview"
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="vertical">
-
-            <TextView
-                android:id="@+id/tvName"
-                style="@style/TextAppearance.AppCompat.Medium"
+            android:layout_height="wrap_content"
+            android:background="@color/light_background">
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Name"
-                android:textColor="@color/design_default_color_secondary" />
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp">
 
-            <TextView
-                android:id="@+id/tvPhone"
-                style="@style/TextAppearance.AppCompat.Large"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Phone"
-                android:textColor="@color/design_default_color_secondary_variant"
-                android:textStyle="bold" />
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/TextAppearance.AppCompat.Medium"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name"
+                    android:textColor="#AF0417" />
 
-        </LinearLayout>
+                <TextView
+                    android:id="@+id/tvPhone"
+                    style="@style/TextAppearance.AppCompat.Large"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Phone"
+                    android:textColor="#CF1116"
+                    android:textStyle="bold" />
 
-    </androidx.cardview.widget.CardView>
-
+            </LinearLayout>
+        </soup.neumorphism.NeumorphCardView>
 </LinearLayout>
