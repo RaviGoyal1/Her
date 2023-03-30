@@ -117,7 +117,7 @@ public class SensorService extends Service {
 
                                 // send SMS to each contact
                                 for (ContactModel c : list) {
-                                    String message = "Hey, " + c.getName() + "I am in DANGER, i need help. Please urgently reach me out. Here are my coordinates.\n " + "http://maps.google.com/?q=" + location.getLatitude() + "," + location.getLongitude();
+                                    String message = "Hey, " + c.getName() + " I am in DANGER, i need help. Please urgently reach me out. Here are my coordinates.\n " + "http://maps.google.com/?q=" + location.getLatitude() + "," + location.getLongitude();
                                     smsManager.sendTextMessage(c.getPhoneNo(), null, message, null, null);
                                 }
                             } else {
@@ -164,7 +164,7 @@ public class SensorService extends Service {
             vibrator.cancel();
             vibrator.vibrate(vibEff);
         } else {
-            vibrator.vibrate(500);
+            vibrator.vibrate(100);
         }
 
 

@@ -1,20 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@color/light_background">
+    android:background="@color/light_background"
+    android:layout_gravity="center">
   <soup.neumorphism.NeumorphButton
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-      android:layout_marginTop="10dp"
-    android:id="@+id/Button1"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginTop="50dp"
+      android:id="@+id/Button1"
+      app:neumorph_backgroundColor="#CF1010"
       style="@style/Widget.Neumorph.Button"
       android:text="Add Contact"
-      android:textColor="#CF1010"
+      android:textColor="@color/light_background"
       android:textStyle="bold"
       android:textSize="20sp"
       android:textAlignment="center"
