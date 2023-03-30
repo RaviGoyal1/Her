@@ -25,6 +25,15 @@ This permission is necessary for devices
         android:supportsRtl="true"
         android:theme="@style/Theme.She"
         tools:targetApi="31">
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
 
         <receiver
             android:name=".ReactivateService"
@@ -38,11 +47,7 @@ This permission is necessary for devices
         <activity
             android:name=".MainActivity"
             android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
