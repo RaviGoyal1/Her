@@ -7,5 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="bgc">#000000</color>
+    <color name="bg">#6fb9ff</color>
+
     <color name="light_background">#ecf0f3</color>
+    <color name="neumorphic_light_color">#F0F0F0</color>
+    <color name="neumorphic_dark_color">#D0D0D0</color>
+    <color name="neumorphic_pressed_color">#B0B0B0</color>
+    <color name="neumorphic_button_color">#6fb9ff</color>
+    <color name="neumorphic_shadow_color">#99000000</color>
 </resources>

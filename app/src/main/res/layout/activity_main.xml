@@ -4,27 +4,63 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel1"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="@color/light_background"
+    android:background="#eff7ff"
     android:layout_gravity="center">
+
+  <androidx.cardview.widget.CardView
+      app:cardElevation="70dp"
+      android:id="@+id/card_view"
+      android:layout_gravity="center"
+      android:layout_alignParentBottom="true"
+      android:layout_centerHorizontal="true"
+      android:background="#6fb9ff"
+      android:layout_width="200dp"
+      android:layout_marginTop="30dp"
+      android:layout_marginBottom="20dp"
+      android:layout_height="wrap_content"
+      app:cardCornerRadius="100dp">
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#6fb9ff"
+        android:onClick="onToggleClicked"
+        android:textColor="@color/light_background"
+        android:textOff="Play  Siren"
+        android:textOn="Pause Siren"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+  </androidx.cardview.widget.CardView>
   <soup.neumorphism.NeumorphButton
-      android:layout_width="match_parent"
+      android:id="@+id/Button1"
+      style="@style/Widget.Neumorph.Button"
+      android:layout_width="250dp"
       android:layout_height="wrap_content"
       android:layout_marginTop="50dp"
-      android:id="@+id/Button1"
-      app:neumorph_backgroundColor="#CF1010"
-      style="@style/Widget.Neumorph.Button"
+      android:gravity="center"
       android:text="Add Contact"
-      android:textColor="@color/light_background"
-      android:textStyle="bold"
-      android:textSize="20sp"
       android:textAlignment="center"
-      android:gravity="center"/>
-    <ListView
+      android:textColor="@color/light_background"
+      android:textSize="20sp"
+      android:textStyle="bold"
+      android:layout_centerHorizontal="true"
+      app:neumorph_backgroundColor="#6fb9ff" />
+
+
+
+
+  <ListView
         android:id="@+id/ListView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/Button1"/>
+        android:layout_below="@+id/Button1"
+      android:layout_marginBottom="100dp"/>
+
 
 </RelativeLayout>

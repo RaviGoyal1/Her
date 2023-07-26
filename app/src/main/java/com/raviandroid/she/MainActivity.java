@@ -7,17 +7,23 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.database.Cursor;
+import android.graphics.Color;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.PowerManager;
 import android.provider.ContactsContract;
 import android.provider.Settings;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.ListView;
+import android.widget.RelativeLayout;
 import android.widget.Toast;
+import android.widget.ToggleButton;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -43,11 +49,23 @@ public class MainActivity extends AppCompatActivity {
     DbHelper db;
     List<ContactModel> list;
     CustomAdapter customAdapter;
+    RelativeLayout relativeLayout;
+
+    private MediaPlayer mediaPlayer;
+    private ToggleButton toggleButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        toggleButton = findViewById(R.id.toggleButton);
+
+        // Initialize the MediaPlayer with the siren sound
+        mediaPlayer = MediaPlayer.create(this, R.raw.policesiren);
+        relativeLayout = findViewById(R.id.rel1);
+
+        // Set the initial state of the toggle button
+        toggleButton.setChecked(false);
         utils.blackIconStatusBar(MainActivity.this,R.color.light_background);
         // check for runtime permissions
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -100,6 +118,31 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
+    public void onToggleClicked(View view) {
+        boolean isChecked = ((ToggleButton) view).isChecked();
+        if (isChecked) {
+            playSiren();
+            toggleButton.setBackgroundResource(R.color.bgc);
+        } else {
+            pauseSiren();
+           toggleButton.setBackgroundResource(R.color.bg);
+        }
+    }
+
+    private void playSiren() {
+        if (mediaPlayer != null) {
+            mediaPlayer.start();
+        }
+    }
+
+    private void pauseSiren() {
+        if (mediaPlayer != null && mediaPlayer.isPlaying()) {
+            mediaPlayer.pause();
+        }
+    }
+
+
+
     // method to check if the service is running
     private boolean isMyServiceRunning(Class<?> serviceClass) {
         ActivityManager manager = (ActivityManager) getSystemService(Context.ACTIVITY_SERVICE);
@@ -120,6 +163,10 @@ public class MainActivity extends AppCompatActivity {
         broadcastIntent.setClass(this, ReactivateService.class);
         this.sendBroadcast(broadcastIntent);
         super.onDestroy();
+        if (mediaPlayer != null) {
+            mediaPlayer.release();
+            mediaPlayer = null;
+        }
     }
 
     @Override
