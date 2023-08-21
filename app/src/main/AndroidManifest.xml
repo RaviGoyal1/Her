@@ -29,13 +29,13 @@ This permission is necessary for devices
         tools:targetApi="31">
         <activity
             android:name=".CallActivity"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".Details"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".FakeCall"
-            android:exported="false" />
+            android:exported="true" />
         <activity
             android:name=".SplashActivity"
             android:exported="true">

@@ -47,19 +47,19 @@
         android:ems="12"
         app:backgroundTint="#6d788d"
         android:maxLength="10"/>
+
     <soup.neumorphism.NeumorphButton
         android:id="@+id/save"
         style="@style/Widget.Neumorph.Button"
         android:layout_width="350dp"
         android:layout_height="90dp"
-        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="40dp"
         android:paddingTop="18dp"
         android:text="Save"
         android:textAlignment="center"
         android:textColor="#6d788d"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:neumorph_backgroundColor="#e7eefc"
-        android:layout_marginTop="40dp"
-        android:layout_centerInParent="true"/>
+        app:neumorph_backgroundColor="#e7eefc" />
 </RelativeLayout>
