@@ -46,21 +46,21 @@
         />
 
 
-    <soup.neumorphism.NeumorphImageButton
-        android:id="@+id/Button2"
-        style="@style/Widget.Neumorph.Button"
-        android:layout_width="190dp"
-        android:layout_height="140dp"
-        android:layout_centerVertical="true"
-        android:gravity="bottom"
-        android:src="@drawable/fakecallsc"
-        android:layout_marginLeft="10dp"
-        app:neumorph_backgroundColor="#e7eefc"
-        android:layout_toRightOf="@id/Button1"
-        android:layout_alignParentBottom="false"
-        android:layout_alignParentEnd="false"
-        android:layout_alignParentStart="false"
-        />
+  <soup.neumorphism.NeumorphImageButton
+      android:id="@+id/fakeBtn"
+      style="@style/Widget.Neumorph.Button"
+      android:layout_width="190dp"
+      android:layout_height="140dp"
+      android:layout_centerVertical="true"
+      android:gravity="bottom"
+      android:src="@drawable/fakecallsc"
+      android:layout_marginLeft="10dp"
+      app:neumorph_backgroundColor="#e7eefc"
+      android:layout_toRightOf="@id/Button1"
+      android:layout_alignParentBottom="false"
+      android:layout_alignParentEnd="false"
+      android:layout_alignParentStart="false"
+      />
 
 
     <soup.neumorphism.NeumorphImageButton
@@ -95,7 +95,7 @@
         android:gravity="bottom"
         app:neumorph_backgroundColor="#e7eefc"
         android:layout_toRightOf="@id/Button3"
-        android:layout_below="@+id/Button2"
+        android:layout_below="@+id/fakeBtn"
         android:layout_marginTop="10dp"
         android:layout_alignParentBottom="false"
         android:layout_alignParentEnd="false"
