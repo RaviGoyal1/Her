@@ -18,6 +18,7 @@ public class HomeScreen extends AppCompatActivity {
 
     ImageButton sirenBt;
     ImageButton help;
+    ImageButton fakeCall;
     private MediaPlayer mediaPlayer;
     private boolean isResume;
     @Override
@@ -41,7 +42,14 @@ public class HomeScreen extends AppCompatActivity {
             }
         });
 
-
+        fakeCall=findViewById(R.id.Button2);
+        Intent i=new Intent(HomeScreen.this, FakeCall.class);
+        fakeCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(i);
+            }
+        });
         help = findViewById(R.id.hlBtn);
         Intent iHelp;
         iHelp = new Intent(HomeScreen.this, helpline.class);
