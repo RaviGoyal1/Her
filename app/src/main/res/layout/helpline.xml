@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel1"
+    tools:context=".helpline"
+    android:background="#e5effd"
+    >
+
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/womenHelpine"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:paddingTop="18dp"
+        android:paddingRight="110dp"
+        android:text="Women helpline 181"
+        android:textColor="#6d788d"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:neumorph_backgroundColor="#e7eefc"
+        android:layout_marginTop="40dp" />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/police"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:layout_below="@+id/womenHelpine"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:paddingTop="18dp"
+        android:paddingRight="220dp"
+        android:text="Police 100"
+        android:textColor="#6d788d"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:neumorph_backgroundColor="#e7eefc"
+         />
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/wid"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:paddingTop="18dp"
+        android:paddingRight="100dp"
+        android:text="Women in Distress 1091"
+        android:textColor="#6d788d"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:neumorph_backgroundColor="#e7eefc"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="251dp"
+        android:layout_below="@+id/police"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <soup.neumorphism.NeumorphButton
+        android:id="@+id/Ambulance"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="350dp"
+        android:layout_height="90dp"
+        android:layout_centerHorizontal="true"
+        android:gravity="left"
+        android:paddingTop="18dp"
+        android:paddingRight="180dp"
+        android:text="Ambulance 108"
+        android:textColor="#6d788d"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:neumorph_backgroundColor="#e7eefc"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="341dp"
+        android:layout_below="@+id/wid"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+
+</RelativeLayout>

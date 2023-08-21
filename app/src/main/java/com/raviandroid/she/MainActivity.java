@@ -52,20 +52,17 @@ public class MainActivity extends AppCompatActivity {
     RelativeLayout relativeLayout;
 
     private MediaPlayer mediaPlayer;
-    private ToggleButton toggleButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        toggleButton = findViewById(R.id.toggleButton);
+
 
         // Initialize the MediaPlayer with the siren sound
-        mediaPlayer = MediaPlayer.create(this, R.raw.policesiren);
         relativeLayout = findViewById(R.id.rel1);
 
         // Set the initial state of the toggle button
-        toggleButton.setChecked(false);
         utils.blackIconStatusBar(MainActivity.this,R.color.light_background);
         // check for runtime permissions
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -118,28 +115,8 @@ public class MainActivity extends AppCompatActivity {
         });
     }
 
-    public void onToggleClicked(View view) {
-        boolean isChecked = ((ToggleButton) view).isChecked();
-        if (isChecked) {
-            playSiren();
-            toggleButton.setBackgroundResource(R.color.bgc);
-        } else {
-            pauseSiren();
-           toggleButton.setBackgroundResource(R.color.bg);
-        }
-    }
 
-    private void playSiren() {
-        if (mediaPlayer != null) {
-            mediaPlayer.start();
-        }
-    }
 
-    private void pauseSiren() {
-        if (mediaPlayer != null && mediaPlayer.isPlaying()) {
-            mediaPlayer.pause();
-        }
-    }
 
 
 

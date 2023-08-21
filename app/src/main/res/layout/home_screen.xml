@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rel1"
+    tools:context=".HomeScreen"
+    android:background="#e5effd"
+    >
+
+  <TextView
+    android:layout_marginTop="40dp"
+    android:layout_marginLeft="10dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Hello,"
+    android:textStyle="bold"
+    android:textSize="40sp"
+    android:textColor="#b6c2ca"
+    />
+
+    <TextView
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="User"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        />
+
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/Button1"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="190dp"
+        android:layout_height="140dp"
+        android:src="@drawable/sirensc"
+        android:layout_centerVertical="true"
+        android:gravity="bottom"
+        android:layout_marginLeft="10dp"
+        app:neumorph_backgroundColor="#e7eefc"
+        android:layout_marginTop="325dp"
+        />
+
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/Button2"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="190dp"
+        android:layout_height="140dp"
+        android:layout_centerVertical="true"
+        android:gravity="bottom"
+        android:src="@drawable/fakecallsc"
+        android:layout_marginLeft="10dp"
+        app:neumorph_backgroundColor="#e7eefc"
+        android:layout_toRightOf="@id/Button1"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        />
+
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/Button3"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="190dp"
+        android:layout_height="140dp"
+        android:layout_below="@+id/Button1"
+        android:src="@drawable/selfdsc"
+        android:layout_alignParentStart="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentBottom="false"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:gravity="bottom"
+        android:text="train yourself"
+        android:textColor="#6d788d"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:neumorph_backgroundColor="#e7eefc" />
+
+
+    <soup.neumorphism.NeumorphImageButton
+        android:id="@+id/hlBtn"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="190dp"
+        android:layout_height="140dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/helpsc"
+        android:layout_marginLeft="10dp"
+        android:text="helpline"
+        android:gravity="bottom"
+        app:neumorph_backgroundColor="#e7eefc"
+        android:layout_toRightOf="@id/Button3"
+        android:layout_below="@+id/Button2"
+        android:layout_marginTop="10dp"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        />
+
+    <soup.neumorphism.NeumorphImageButton
+        app:neumorph_shapeType="basin"
+        android:id="@+id/Button5"
+        style="@style/Widget.Neumorph.Button"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="1dp"
+        android:gravity="center"
+        android:src="@drawable/emersc"
+        android:layout_centerHorizontal="true"
+        app:neumorph_backgroundColor="#e7eefc"
+        android:layout_below="@+id/Button3"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentStart="false"
+        />
+
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_marginTop="40dp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="40dp"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        app:srcCompat="@drawable/ic_launcher_foreground" />
+
+
+</RelativeLayout>
+

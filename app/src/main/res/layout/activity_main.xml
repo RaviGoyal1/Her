@@ -7,7 +7,7 @@
     android:id="@+id/rel1"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:background="#eff7ff"
+    android:background="#e5effd"
     android:layout_gravity="center">
 
   <androidx.cardview.widget.CardView
@@ -16,25 +16,12 @@
       android:layout_gravity="center"
       android:layout_alignParentBottom="true"
       android:layout_centerHorizontal="true"
-      android:background="#6fb9ff"
+      android:background="#e7eefc"
       android:layout_width="200dp"
       android:layout_marginTop="30dp"
       android:layout_marginBottom="20dp"
       android:layout_height="wrap_content"
       app:cardCornerRadius="100dp">
-
-    <ToggleButton
-        android:id="@+id/toggleButton"
-        style="@style/Widget.Neumorph.Button"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="#6fb9ff"
-        android:onClick="onToggleClicked"
-        android:textColor="@color/light_background"
-        android:textOff="Play  Siren"
-        android:textOn="Pause Siren"
-        android:textSize="20sp"
-        android:textStyle="bold" />
 
   </androidx.cardview.widget.CardView>
   <soup.neumorphism.NeumorphButton
@@ -46,11 +33,11 @@
       android:gravity="center"
       android:text="Add Contact"
       android:textAlignment="center"
-      android:textColor="@color/light_background"
+      android:textColor="#6d788d"
       android:textSize="20sp"
       android:textStyle="bold"
       android:layout_centerHorizontal="true"
-      app:neumorph_backgroundColor="#6fb9ff" />
+      app:neumorph_backgroundColor="#e7eefc" />
 
 
 
@@ -60,7 +47,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_below="@+id/Button1"
-      android:layout_marginBottom="100dp"/>
+      />
 
 
 </RelativeLayout>

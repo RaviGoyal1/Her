@@ -6,14 +6,14 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     android:padding="4dp"
-    android:background="@color/light_background">
+    android:background="#e5effd">
 
 
         <soup.neumorphism.NeumorphCardView
             android:id="@+id/cardview"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="@color/light_background">
+            android:background="#e7eefc">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
@@ -28,7 +28,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Name"
-                    android:textColor="#AF0417" />
+                    android:textColor="#6d788d" />
 
                 <TextView
                     android:id="@+id/tvPhone"
@@ -36,7 +36,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Phone"
-                    android:textColor="#CF1116"
+                    android:textColor="#6d788d"
                     android:textStyle="bold" />
 
             </LinearLayout>
